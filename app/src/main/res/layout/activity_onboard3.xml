@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundclr"
+    android:backgroundTint="@color/backgroundclr"
+    tools:context=".Onboard3">
+
+    <!-- Financial Tracker Message -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="420dp"
+        android:layout_height="834dp"
+        android:background="@color/backgroundclr"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ob3" />
+
+    <TextView
+        android:id="@+id/financialTrackerMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Take charge of your money. FISCORD empowers you to track expenses, manage income, and master your financial journey."
+        android:textColor="@color/secondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="238dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/rounded_button"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
